@@ -1,0 +1,33 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <h4>All Posts</h4>    
+    {% if user.is_authenticated %}
+    <div id="compose-view">        
+        <div>
+            <form id="compose-form">
+                <h5>New Post</h5>            
+                <textarea class="form-control" id="compose-body"></textarea>
+                <p></p>
+                <input type="submit" class="btn btn-primary" value="Send"/>                
+            </form>
+        </div>
+                
+    </div>    
+    {% endif %}        
+    
+    <div id="posts-view">   
+    </div>
+
+    <div id="profile-view">                     
+    </div>
+
+    <div id="following-view">                     
+    </div>    
+
+{% endblock %}
+
+{% block script %}
+        <script src="{% static 'network/index.js' %}"></script>
+{% endblock %}
