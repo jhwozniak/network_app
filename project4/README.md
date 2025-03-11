@@ -14,9 +14,11 @@ Basic screen shows you a list of most recent posts:
 ![Login](./network/static/images/login.png)
 
 You can create a new post by filling the body and clicking on the "Send" button:
+
 ![Posting](./network/static/images/posting.png)
 
 Each post has a user, body, date, number of likes and dislikes and three buttons: like, dislike and follow. You can like or dislike a post by clicking on the respective button.
+
 ![Post](./network/static/images/post.png)
 
 You can follow or unfollow a user by clicking on its username and then by clicking "Follow" of "Unfollow" button.  
