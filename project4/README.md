@@ -1,6 +1,6 @@
 # Network App
 
-A basic Django web project to illustrate Twitter-like features like creating online posts, submitting likes/dislikes and following/unfollowing other users.
+A basic Django web project to illustrate Twitter-like features like creating online posts, submitting likes/dislikes and following/unfollowing other users. Link to video presentation: https://youtu.be/ufH4Tnw18H0
 
 ## Requirements
 
@@ -26,6 +26,9 @@ You can follow or unfollow a user by clicking on its username and then by clicki
 
 When you click on your username in the top navigation bar, you will get your profile stats and a list of all your followed posts:
 ![Profile_full](./network/static/images/profile_full.png)
+
+## Implementation details
+It was implemented in Python (Django) and Javascript. Users can add and edit posts, give and take likes, follow other users. Similarly to the original Twitter, the website was designed as a single-page app, so it relies heavily on Javascript and renders only one index.html template. It intesively uses AJAX technology of asynchronous fetch calls from server, without a need to reload the entire page. I used Python's Paginator class in order to implement dynamic server-side pagination of posts (10 per page) in order not to overload the page with unnecessary content. 
 
 ## Endpoints
 ### Posts
